@@ -1,2 +1,16 @@
 <h1>Kittens#index</h1>
 <p>Find me in app/views/kittens/index.html.erb</p>
+
+<ul>
+  <% @kittens.each do |k|%>
+  <li>
+    Kitten: 
+    <ul>
+      <li>Name: <%= k.name %></li>
+      <li>Age: <%= k.age %></li>
+      <li>Cuteness: <%= k.cuteness %></li>
+      <li>Softeness: <%= k.softness %></li>
+    </ul>
+  </li>
+  <% end %>
+</ul>

@@ -10,6 +10,8 @@
       <li>Age: <%= k.age %></li>
       <li>Cuteness: <%= k.cuteness %></li>
       <li>Softeness: <%= k.softness %></li>
+      <li><%= link_to "Delete Kitten", k, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
+      <li><%= link_to "Edit Kitten", edit_kitten_path(k) %></li>
     </ul>
   </li>
   <% end %>

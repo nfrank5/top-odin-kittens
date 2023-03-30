@@ -8,3 +8,5 @@ Kitten:
   <li>Cuteness: <%= @kitten.cuteness %></li>
   <li>Softeness: <%= @kitten.softness %></li>
 </ul>
+
+<%= link_to "Delete Kitten", @kitten, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>

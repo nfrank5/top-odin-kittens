@@ -2,3 +2,5 @@
 <p>Find me in app/views/kittens/edit.html.erb</p>
 
 <%= render "kitten_form", :kitten => @kitten %>
+
+<%= link_to "Delete Kitten", @kitten, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
